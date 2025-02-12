@@ -1,0 +1,20 @@
+/* MediaCollectionView.module.css */
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust minmax value as needed */
+  gap: 16px; /* Space between grid items */
+}
+
+.media-item {
+  width: 450px; /* Set fixed width */
+  height: 450px; /* Set fixed height */
+  overflow: hidden; /* Hide overflow */
+  border-radius: 8px; /* Optional: add some styling */
+  border: 1px solid #ccc;
+}
+
+.media-item img {
+  width: 100%; /* Make images responsive */
+  height: 100%; /* Make images fill the container */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
